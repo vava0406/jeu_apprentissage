@@ -9,6 +9,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CE2.css" />
+    <script src="CE2.js"></script>
     <title>Quiz</title>
 </head>
 
@@ -18,9 +19,9 @@
             <div class="start-screen">
                 <h1 class="heading">Quizz Primaire</h1>
                 <h2 class="heading2">Choissiser la matière</h2>
-                <button class="btn start">Français</button>
-                <button class="btn start">Mathématique</button>
-                <button class="btn start">Anglais</button>
+                <button type="button" class="btn start" onclick="redirectToFrancaisPage()">Français</button>
+                <button type="button" class="btn start" onclick="redirectToMathsPage()">Mathématique</button>
+                <button type="button" class="btn start" onclick="redirectToAnglaisPage()">Anglais</button>
             </div>
         </form>
         <script src="script.js"></script>

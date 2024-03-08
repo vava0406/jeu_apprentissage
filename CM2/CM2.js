@@ -1,15 +1,15 @@
 function redirectToFrancaisPage() {
-    window.location.href = "Cp_Francais.html";
+    window.location.href = "Matieres/CM2_Francais.html";
 }
 
 function redirectToMathsPage() {
-    window.location.href = "Cp_Maths.html";
+    window.location.href = "Matieres/CM2_Maths.html";
 }
 
 function redirectToAnglaisPage() {
-    window.location.href = "Cp_Anglais.html";
+    window.location.href = "Matieres/CM2_Anglais.html";
 }
 
 function redirectToCGPage() {
-    window.location.href = "Cp_Francais.html";
+    window.location.href = "Matieres/CM2_CG.html";
 }

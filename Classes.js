@@ -1,5 +1,5 @@
 function redirectToCPPage() {
-    window.location.href = "CP/Cp-matiere.html";
+    window.location.href = "CP/Cp_matiere.html";
 }
 
 function redirectToCE1Page() {

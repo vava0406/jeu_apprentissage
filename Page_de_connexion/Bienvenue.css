@@ -120,10 +120,3 @@ body {
     display: block;
     margin : 0 auto;
 }
-
-#error-message {
-    text-align: center;
-    font-size: 14px;
-    color: #ff0000;
-    margin-bottom: 10px;
-}

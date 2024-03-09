@@ -26,7 +26,7 @@ try {
         header('Location: ../accueil.php');
     } else {
         // L'utilisateur n'est pas authentifié
-        echo $error = 'Adresse e-mail ou mot de passe incorrect.';
+        $error = 'Adresse e-mail ou mot de passe incorrect.';
     }
 
 } catch (PDOException $e) {

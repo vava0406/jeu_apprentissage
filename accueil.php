@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['utilisateur'])) {
     // L'utilisateur n'est pas authentifié, redirigez-le vers la page de connexion
-    header('Location: login.html.php');
+    header('Location: Connexion.html');
     exit();
 }
 

@@ -76,3 +76,8 @@ body {
     display: block;
     margin: 20px auto;
 }
+
+.btn_start.selected {
+    background-color: #4CAF50; /* Couleur de fond verte pour indiquer la sélection */
+    color: white; /* Texte en blanc pour une meilleure lisibilité */
+}

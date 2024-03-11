@@ -1,9 +1,9 @@
 function redirectTosyllabesPage() {
-    window.location.href = "Partie_1/francais1.html";
+    window.location.href = "Partie_1/syllabes1.html";
 }
 
 function redirectToOAPage() {
-    window.location.href = "Partie_2/francais2.html";
+    window.location.href = "Partie_2/OA_1.html"; 
 }
 
 function redirectToconjugaisonPage() {

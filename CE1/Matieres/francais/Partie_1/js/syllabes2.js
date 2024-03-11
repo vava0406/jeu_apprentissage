@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['de', 'gi', 'co', 'po'];
+    var syllabesCorrectes = ['Di', 'Ma', 'Che', 'Va'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === 'co') {
+                if (reponse.textContent === 'Di') {
                     reponseCoSelectionnee = true;
                 }
             }
@@ -20,8 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (reponseCoSelectionnee) {
             resultat.textContent = 'Bonne réponse !';
+
+            window.location.href = 'syllabes3.html';
         } else {
             resultat.textContent = 'Mauvaise réponse. Réessayez.';
+            resultat.style.color = 'red'; 
+            document.querySelector('.container').appendChild(resultat);
         }
 
         document.querySelector('.start-screen').appendChild(resultat);

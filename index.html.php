@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if (isset($_SESSION['utilisateur'])) {
+        $utilisateur = $_SESSION['utilisateur'];
+        header('Location: accueil.php');
+        exit();
+    } else {
+        $utilisateur = null;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +35,9 @@
                 <button type="button" class="btn_start" onclick="redirectToCE2Page()">CE2</button>
                 <button type="button" class="btn_start" onclick="redirectToCM1Page()">CM1</button>
                 <button type="button" class="btn_start" onclick="redirectToCM2Page()">CM2</button>
-                <button type="button" class="btn_connect" onclick="redirectToConnexionPage()">Connexion</button>
-            </div>
+                <?php if (!$utilisateur): ?>
+                    <button type="button" class="btn_connect" onclick="redirectToConnexionPage()">Connexion</button>
+                <?php endif; ?>            </div>
         </form>
     </div>
 </body>

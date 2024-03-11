@@ -7,7 +7,7 @@ function redirectToOAPage() {
 }
 
 function redirectToconjugaisonPage() {
-    window.location.href = "Partie_3/francais3.html";
+    window.location.href = "Partie_3/Conjugaison_1.html";
 }
 
 function redirectToinfinitifPage() {

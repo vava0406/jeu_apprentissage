@@ -26,7 +26,7 @@ $utilisateur = $_SESSION['utilisateur'];
         <h1 class="heading">Bienvenue <?php echo htmlspecialchars($utilisateur['Prenom']); ?> !</h1>
         <p class="heading2">Vous êtes connecté en tant que <?php echo htmlspecialchars($utilisateur['Email']); ?>.</p>
         <h4><a class="btn_connexion" href="index.html">Accueil</a></h4>
-        <button type="button" onclick="redirectToInscriptionPage()" class="btn_connexion">Déconnexion <?php session_destroy() ?> </button>
+        <a href="deconnexion.php" class="btn_connexion">Déconnexion</a>
     </div> 
 
     <script>

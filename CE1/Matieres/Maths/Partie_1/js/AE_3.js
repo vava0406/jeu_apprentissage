@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ["Nous ne voyons pas souvent d'oiseaux migrateurs ici.", "Les oiseaux ne chantent pas dans le jardin.", "Il n'y a pas d'oiseaux colorés dans cette forêt.", 'Les oiseaux ne volent jamais la nuit.'];
+    var syllabesCorrectes = ['2€ + 5€ + 2€', '10€ + 2€', '10€ + 2€ + 2€', '5€ + 5€ + 2€'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === 'Les oiseaux ne chantent pas dans le jardin.') {
+                if (reponse.textContent === '10€ + 2€ + 2€') {
                     reponseCoSelectionnee = true;
                 }
             }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (reponseCoSelectionnee) {
             resultat.textContent = 'Bonne réponse !';
 
-            window.location.href = 'negation_4.html';
+            window.location.href = 'AE_4.html';
         } else {
             resultat.textContent = 'Mauvaise réponse. Réessayez.';
             resultat.style.color = 'red'; 

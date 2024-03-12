@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ["Ma sœur ne s'intéresse pas à la lecture.", 'Ma soeur ne lit jamais.', "Ma sœur n'adore pas lire.", "Ma sœur ne lit pas d'histoire."];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === "Ma sœur n'adore pas lire.") {
                     reponseCoSelectionnee = true;
                 }
             }

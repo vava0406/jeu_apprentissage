@@ -11,9 +11,13 @@ function redirectToconjugaisonPage() {
 }
 
 function redirectToinfinitifPage() {
-    window.location.href = "Partie_4/francais4.html";
+    window.location.href = "Partie_4/infinitif_1.html";
 }
 
 function redirectTonegationPage() {
-    window.location.href = "Partie_5/francais5.html";
+    window.location.href = "Partie_5/negation_1.html";
+}
+
+function redirectToIndexPage() {
+    window.location.href = "../../CE1_matiere.html";
 }

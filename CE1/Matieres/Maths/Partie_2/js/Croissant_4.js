@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ['7 - 5 - 12 - 10', '15 - 3 - 6 - 8', '11 - 9 - 14 - 2', '1 - 4 - 8 - 13 - 19'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === '1 - 4 - 8 - 13 - 19') {
                     reponseCoSelectionnee = true;
                 }
             }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (reponseCoSelectionnee) {
             resultat.textContent = 'Bonne réponse !';
 
-            window.location.href = 'syllabes2.html';
+            window.location.href = 'end.html';
         } else {
             resultat.textContent = 'Mauvaise réponse. Réessayez.';
             resultat.style.color = 'red'; 

@@ -91,10 +91,29 @@ body {
     transition: 0.3s linear;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    position : absolute;
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     justify-content: center;
-    margin-left: 25%;
-    margin-bottom: 20%;
+    margin-left: 33%;
+    margin-bottom: 5%;
+}
+
+.btn_deconnexion {
+    width: 35%;
+    height: 30px;
+    background: rgba(0, 35, 35, 0.23);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30%;
+
 }

@@ -21,3 +21,7 @@ function redirectToCM2Page() {
 function redirectToConnexionPage() {
     window.location.href = "Page_de_connexion/Connexion.html";
 }
+
+function redirectToCompte() {
+    window.location.href = "accueil.php";
+}

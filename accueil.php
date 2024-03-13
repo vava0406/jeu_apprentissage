@@ -23,7 +23,7 @@ $utilisateur = $_SESSION['utilisateur'];
 </head>
 <body>
     <div class="container">
-        <h1 class="heading">Bienvenue <?php echo htmlspecialchars($utilisateur['Prenom']); ?> !</h1>
+        <h1 class="heading">Bonjour <?php echo htmlspecialchars($utilisateur['Prenom']); ?> !</h1>
         <p class="heading2">Vous êtes connecté en tant que <?php echo htmlspecialchars($utilisateur['Email']); ?>.</p>
         <h4><a class="btn_connexion" href="index.html.php">Accueil</a></h4>
         <a href="deconnexion.php" class="btn_connexion">Déconnexion</a>

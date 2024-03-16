@@ -1,3 +1,3 @@
-function redirectToclassematierePage() {
-    window.location.href = "../[classe]_[matiere].html";
+function redirectToCM2MathsPage() {
+    window.location.href = "../CM2_Maths.html";
 }

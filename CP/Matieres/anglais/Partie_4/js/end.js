@@ -1,3 +1,3 @@
-function redirectToclassematierePage() {
-    window.location.href = "../[classe]_[matiere].html";
+function redirectToCPAnglaisPage() {
+    window.location.href = "../CP_Anglais.html";
 }

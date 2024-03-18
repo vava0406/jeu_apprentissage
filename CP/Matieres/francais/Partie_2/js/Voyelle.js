@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ['t/p/c/r/k/l', 'r/m/l/s/p/t', 'a/e/i/o/u/y', 'f/b/h/n/q/d'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === 'a/e/i/o/u/y') {
                     reponseCoSelectionnee = true;
                 }
             }

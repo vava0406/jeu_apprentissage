@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ['8 - 7 - 6 - 5', '4 - 9 - 5 - 7', '6 - 12 - 1 - 11', '10 - 2 - 8 - 3'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === '8 - 7 - 6 - 5') {
                     reponseCoSelectionnee = true;
                 }
             }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (reponseCoSelectionnee) {
             resultat.textContent = 'Bonne réponse !';
 
-            window.location.href = '.html';
+            window.location.href = 'Croissant_4.html';
         } else {
             resultat.textContent = 'Mauvaise réponse. Réessayez.';
             resultat.style.color = 'red'; 

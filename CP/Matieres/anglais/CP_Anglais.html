@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RoboLearnLabs</title>
+    <link rel="stylesheet" href="CP_anglais.css" >
+    <script src="CP_anglais.js"></script>
 </head>
 <body>
-    frfr
+    <div class="container">
+        <form>
+            <div class="start-screen">
+                <h1 class="heading">Quizz CP Anglais</h1>
+                <h2 class="heading2">Choissisez la catégorie</h2>
+                <button type="button" class="btn_start" onclick="redirectToFrancaisAnglaisPage()">Français à Anglais</button>
+                <button type="button" class="btn_start" onclick="redirectToAnglaisFrancaisPage()">Anglais à Français</button>
+                <button type="button" class="btn_start" onclick="redirectToChiffresPage()">Chiffres</button>
+                <button type="button" class="btn_start" onclick="redirectToCouleurPage()">Couleur</button>
+            </div>
+        </form>
+        <button type="button" class="btn_index" onclick="redirectToIndexPage()">Accueil</button>
+    </div>
 </body>
 </html>

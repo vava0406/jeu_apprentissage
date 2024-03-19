@@ -1,13 +1,17 @@
-function redirectToFormePage() {
-    window.location.href = "Partie_1/Forme_1.html";
+function redirectToCubePage() {
+    window.location.href = "Partie_1/Cube_1.html";
+}
+
+function redirectToCotePage() {
+    window.location.href = "Partie_2/Cote_1.html";
 }
 
 function redirectToEcriturePage() {
-    window.location.href = "Partie_2/Ecriture_1.html";
+    window.location.href = "Partie_3/Ecriture_1.html";
 }
 
 function redirectToCalculPage() {
-    window.location.href = "Partie_3/Calcul_1.html";
+    window.location.href = "Partie_4/Calcul_1.html";
 }
 
 function redirectToCompletePage() {

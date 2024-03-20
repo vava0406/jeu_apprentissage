@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (reponseCoSelectionnee) {
             resultat.textContent = 'Bonne réponse !';
 
-            window.location.href = 'Croissant_4s.html';
+            window.location.href = 'PG_4.html';
         } else {
             resultat.textContent = 'Mauvaise réponse. Réessayez.';
             resultat.style.color = 'red'; 

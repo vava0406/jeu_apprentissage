@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '10') {
+                if (reponse.textContent === '7') {
                     reponseCoSelectionnee = true;
                 }
             }

@@ -1,3 +1,3 @@
-function redirectToCPAnglaisPage() {
-    window.location.href = "../CP_Anglais.html";
+function redirectToCE1AnglaisPage() {
+    window.location.href = "../CE1_Anglais.html";
 }

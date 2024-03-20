@@ -1,4 +1,4 @@
-function redirectTosAlphabetPage() {
+function redirectToAlphabetPage() {
     window.location.href = "Partie_1/Alphabet.html";
 }
 

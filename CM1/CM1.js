@@ -1,11 +1,11 @@
 function redirectToFrancaisPage() {
-    window.location.href = "Matieres/francais/classe_Francais.html";
+    window.location.href = "Matieres/francais/CM1_Francais.html";
 }
 
 function redirectToMathsPage() {
-    window.location.href = "Matieres/Maths/classe_Maths.html";
+    window.location.href = "Matieres/Maths/CM1_Maths.html";
 }
 
 function redirectToAnglaisPage() {
-    window.location.href = "Matieres/anglais/classe_Anglais.html";
+    window.location.href = "Matieres/anglais/CM1_Anglais.html";
 }

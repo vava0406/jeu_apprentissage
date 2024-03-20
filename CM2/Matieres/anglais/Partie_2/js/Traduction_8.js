@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ['We visited an interesting zoo yesterday.', 'We visited a boring museum yesterday.', 'We visited a museum of chocolate yesterday.', 'We visited an interesting museum yesterday.'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === 'We visited an interesting museum yesterday.') {
                     reponseCoSelectionnee = true;
                 }
             }

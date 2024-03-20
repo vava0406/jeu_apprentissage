@@ -9,7 +9,3 @@ function redirectToMathsPage() {
 function redirectToAnglaisPage() {
     window.location.href = "Matieres/anglais/classe_Anglais.html";
 }
-
-function redirectToCGPage() {
-    window.location.href = "Matieres/CG/classe_CG.html";
-}

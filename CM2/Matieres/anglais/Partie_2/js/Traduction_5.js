@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['', '', '', ''];
+    var syllabesCorrectes = ['I ate a delicious pizza for dessert.', 'I ate a terrible pizza for breakfast.', 'I ate a delicious hamburger for dinner.', 'I ate a delicious pizza for dinner.'];
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         var reponses = document.querySelectorAll('.btn_start');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (reponse.classList.contains('selected')) {
                 reponsesSelectionnees.push(reponse.textContent);
 
-                if (reponse.textContent === '') {
+                if (reponse.textContent === 'I ate a delicious pizza for dinner.') {
                     reponseCoSelectionnee = true;
                 }
             }

@@ -7,5 +7,5 @@ function redirectToTraductionPage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CE1_matiere.html";
+    window.location.href = "../../CM2_matiere.html";
 }

@@ -44,22 +44,69 @@ body {
     margin-top: 50px;
 }
 
-.btn_start {
+.btn_start_1 {
     width: 100%;
     height: 60px;
-    background: rgba(0, 35, 35, 0.23);
+    background: rgb(255, 0, 0);
     border: none;
     border-radius: 10px;
-    color: #ffffff;
+    color: #ff0000;
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s linear;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
+.btn_start_2 {
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 153, 0);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 153, 0);
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    box-shadow: 2px 2px 5px rgb(255, 153, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn_start_3 {
+    width: 100%;
+    height: 60px;
+    background: rgb(183, 0, 255);
+    border: none;
+    border-radius: 10px;
+    color: rgb(183, 0, 255);
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    box-shadow: 2px 2px 5px rgb(183, 0, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn_start_4 {
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 255, 34);
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 255, 34);
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    box-shadow: 2px 2px 5px rgb(0, 255, 34);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 .btn_valider {
     width: 50%;
     height: 70px;
@@ -78,6 +125,6 @@ body {
 }
 
 .btn_start.selected {
-    background-color: #4CAF50; /* Couleur de fond verte pour indiquer la sélection */
-    color: white; /* Texte en blanc pour une meilleure lisibilité */
+    background-color: #1b3ac7;
+    color: white;
 }

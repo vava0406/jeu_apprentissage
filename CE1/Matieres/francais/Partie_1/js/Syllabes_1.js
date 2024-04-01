@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['26'];
+    var syllabesCorrectes = ['co'];
     var reponseValidee = false;
 
     // Fonction pour désactiver les boutons de réponse
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
         if (reponseValidee) {
-            window.location.href = 'end.html';
+            window.location.href = 'Syllabes_2.html';
         } else {
             // Vérification de la réponse sélectionnée
             var reponses = document.querySelectorAll('.btn_start');

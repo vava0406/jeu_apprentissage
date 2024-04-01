@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['26'];
+    var syllabesCorrectes = ['lo'];
     var reponseValidee = false;
 
     // Fonction pour désactiver les boutons de réponse

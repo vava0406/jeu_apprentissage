@@ -15,7 +15,7 @@ function redirectToCalculPage() {
 }
 
 function redirectToCompletePage() {
-    window.location.href = "Partie_4/Complete_1.html";
+    window.location.href = "Partie_5/Complete_1.html";
 }
 
 function redirectToIndexPage() {

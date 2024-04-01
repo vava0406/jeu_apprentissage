@@ -78,6 +78,6 @@ body {
 }
 
 .btn_start.selected {
-    background-color: #4CAF50; /* Couleur de fond verte pour indiquer la sélection */
-    color: white; /* Texte en blanc pour une meilleure lisibilité */
+    background-color: #1b3ac7; 
+    color: white; 
 }

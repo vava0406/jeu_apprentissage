@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dddfeb;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: linear-gradient(to bottom, rgb(0, 190, 190), #00e8005b);
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(22, 3, 90);
+    padding: 10px;
+    text-align: center;
+}
+
+.heading2 {
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.btn_connect {
+    width: 30%;
+    height: 30px;
+    background: rgba(0, 35, 35, 0.23);
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position : absolute;
+    top : 10px;
+    right : 10px;
+}
+
+.quizz {
+    width: 350px; 
+    height: auto; 
+    margin-top: 50px;
+    margin-bottom: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn_quizz {
+    width: 103%;
+    height: 60px;
+    background: rgb(7, 16, 148);
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.resultats {
+    width: 350px; 
+    height: auto; 
+    margin-bottom: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn_resultats {
+    width: 103%;
+    height: 60px;
+    background: rgb(7, 16, 148);
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+

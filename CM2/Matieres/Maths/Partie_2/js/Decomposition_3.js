@@ -1,43 +1,66 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['(8 x 100) + (9 x 10) + (7 x 1)', '(8 x 1 000) + (6 x 100) + (4 x 10)', '(4 x 1 000) + (8 x 100) + (9 x 10) + (7 x 1)', '(5 x 1 000) + (7 x 100) + (8 x 10) + (5 x 1)'];
+    var syllabesCorrectes = ['(4 x 1 000) + (8 x 100) + (9 x 10) + (7 x 1)'];
+    var reponseValidee = false;
+
+    // Fonction pour désactiver les boutons de réponse
+    function desactiverBoutonsReponse() {
+        document.querySelectorAll('.btn_start').forEach(function (btn) {
+            btn.disabled = true;
+        });
+    }
 
     document.querySelector('.btn_valider').addEventListener('click', function () {
-        var reponses = document.querySelectorAll('.btn_start');
-        var reponseCoSelectionnee = false;
-        var reponsesSelectionnees = [];
-
-        reponses.forEach(function (reponse) {
-            if (reponse.classList.contains('selected')) {
-                reponsesSelectionnees.push(reponse.textContent);
-
-                if (reponse.textContent === '(4 x 1 000) + (8 x 100) + (9 x 10) + (7 x 1)') {
-                    reponseCoSelectionnee = true;
-                }
-            }
-        });
-
-        var resultat = document.createElement('p');
-
-        if (reponseCoSelectionnee) {
-            resultat.textContent = 'Bonne réponse !';
-
-            window.location.href = 'Decomposition_3.html';
+        if (reponseValidee) {
+            window.location.href = 'Decomposition_4.html';
         } else {
-            resultat.textContent = 'Mauvaise réponse. Réessayez.';
-            resultat.style.color = 'red'; 
-            document.querySelector('.container').appendChild(resultat);
-        }
+            // Vérification de la réponse sélectionnée
+            var reponses = document.querySelectorAll('.btn_start');
+            var reponseCoSelectionnee = false;
 
-        document.querySelector('.start-screen').appendChild(resultat);
+            reponses.forEach(function (reponse) {
+                if (reponse.classList.contains('selected') && reponse.textContent === syllabesCorrectes[0]) {
+                    reponseCoSelectionnee = true;
+                    reponse.style.backgroundColor = 'green'; // Change la couleur de fond du bouton sélectionné en vert
+                }
+            });
+
+            if (reponseCoSelectionnee) {
+                reponseValidee = true; // Marquer la réponse comme validée
+            } else {
+                // Réinitialise toutes les couleurs des boutons
+                document.querySelectorAll('.btn_start').forEach(function (btn) {
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                });
+
+                // Change la couleur de fond du bouton sélectionné en rouge
+                var selectedBtn = document.querySelector('.btn_start.selected');
+                if (selectedBtn) {
+                    selectedBtn.style.backgroundColor = 'red';
+                }
+
+                // Trouve et affiche la bonne réponse en vert
+                document.querySelectorAll('.btn_start').forEach(function (btn) {
+                    if (btn.textContent === syllabesCorrectes[0]) {
+                        btn.style.backgroundColor = 'green';
+                        btn.style.color = 'white';
+                    }
+                });
+            }
+
+            desactiverBoutonsReponse();
+            reponseValidee = true; // Marquer la réponse comme validée même si elle est fausse, pour permettre de passer à la page suivante
+        }
     });
 
     document.querySelectorAll('.btn_start').forEach(function (reponse) {
         reponse.addEventListener('click', function () {
+            if (reponseValidee) return;
+
             document.querySelectorAll('.btn_start').forEach(function (btn) {
                 btn.classList.remove('selected');
             });
 
-            // Ajoute la classe 'selected' au bouton cliqué
             reponse.classList.add('selected');
         });
     });

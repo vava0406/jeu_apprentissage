@@ -1,3 +1,3 @@
 function redirectToCM2FrancaisPage() {
-    window.location.href = "../CM2_Fracais.html";
+    window.location.href = "../CM2_Francais.html";
 }

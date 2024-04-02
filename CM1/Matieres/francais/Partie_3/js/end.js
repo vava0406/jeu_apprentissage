@@ -1,3 +1,3 @@
-function redirectTocCM1FrancaisPage() {
+function redirectToCM1FrancaisPage() {
     window.location.href = "../CM1_Francais.html";
 }

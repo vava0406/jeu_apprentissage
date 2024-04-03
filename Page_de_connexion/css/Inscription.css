@@ -73,6 +73,20 @@ body {
     text-align: center;
 }
 
+.toggle-password {
+    position: absolute;
+    top: 70.8%;
+    right: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.toggle-password:hover {
+    color: #ccc;
+}
+
 .btn_inscription {
     width: 50%;
     height: 60px;

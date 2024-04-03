@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -31,32 +30,33 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgb(22, 3, 90);
+    background: linear-gradient(to bottom, #0097B2, #0CC0DF);
     padding: 10px;
     text-align: center;
 }
 
 .heading2 {
     text-align: left;
-    font-size: 20px;
-    color: #fff;
+    font-size: 15px;
+    color: #000033;
     margin-bottom: 10px;
 }
 
 .btn_connect {
     width: 30%;
-    height: 30px;
+    height: 55%;
     background: rgba(0, 35, 35, 0.23);
     border: none;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 117%;
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s linear;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     position : absolute;
-    top : 10px;
-    right : 10px;
+    top : 16%;
+    right : 8%;
+    border-radius: 5%;
 }
 
 .quizz {

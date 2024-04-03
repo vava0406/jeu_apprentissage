@@ -27,7 +27,6 @@ if (!isset($_SESSION['utilisateur'])) {
 
 <body>
     <div class="container">
-        <form>
             <div class="start-screen">
                 <h1 class="heading">Quizz Primaire</h1>
                 <h2 class="heading2">Choissisez votre classe</h2>
@@ -42,7 +41,6 @@ if (!isset($_SESSION['utilisateur'])) {
                     <button type="button" class="btn_connect" onclick="redirectToCompte()">Compte</button>
                 <?php endif ?>
             </div>
-        </form>
     </div>
 </body>
 

@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (reponse.classList.contains('selected') && reponse.textContent === syllabesCorrectes[0]) {
                     reponseCoSelectionnee = true;
                     reponse.style.backgroundColor = 'green'; // Change la couleur de fond du bouton sélectionné en vert
+                    let reponseCoSelectionnee = new URLSearchParams(window.location.search).get('reponseCoSelectionnee');
+                    console.log(reponseCoSelectionnee);
                 }
             });
 

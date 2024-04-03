@@ -59,6 +59,20 @@ body {
     border-radius: 10px;
 }
 
+.toggle-password {
+    position: absolute;
+    top: 49%;
+    right: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.toggle-password:hover {
+    color: #ccc;
+}
+
 .btn_connexion {
     width: 50%;
     height: 60px;
@@ -119,4 +133,11 @@ body {
     border-radius: 10px;
     display: block;
     margin : 0 auto;
+}
+
+#error-message {
+    text-align: center;
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 10px;
 }

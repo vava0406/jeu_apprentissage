@@ -23,7 +23,7 @@ try {
         // L'utilisateur est authentifié
         session_start();
         $_SESSION['utilisateur'] = $user;
-        header('Location: ../accueil.php');
+        header('Location: ../../accueil.php');
     } else {
         // L'utilisateur n'est pas authentifié
         $error = 'Adresse e-mail ou mot de passe incorrect.';
@@ -33,5 +33,5 @@ try {
     echo "Erreur : " . $e->getMessage();
 }
 
-require_once('Connexion.html');
+require_once('../Connexion.html');
 ?>

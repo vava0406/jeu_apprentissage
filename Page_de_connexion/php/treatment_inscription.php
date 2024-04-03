@@ -40,5 +40,5 @@
         echo "Erreur : " . $e->getMessage();
     }
 
-    require_once('Bienvenue.html.php');
+    require_once('../Bienvenue.html.php');
 ?>

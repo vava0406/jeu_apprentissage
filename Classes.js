@@ -1,21 +1,21 @@
 function redirectToCPPage() {
-    window.location.href = "CP/Cp_matiere.html";
+    window.location.href = "CP/CP_matieres.html";
 }
 
-function redirectToCE1Page() {
-    window.location.href = "CE1/CE1-matiere.html";
+function redirectToCE1Page() {xbv
+    window.location.href = "CE1/CE1_matieres.html";
 }
 
 function redirectToCE2Page() {
-    window.location.href = "CE2/CE2-matiere.html";
+    window.location.href = "CE2/CE2_matieres.html";
 }
 
 function redirectToCM1Page() {
-    window.location.href = "CM1/CM1-matiere.html";
+    window.location.href = "CM1/CM1_matieres.html";
 }
 
 function redirectToCM2Page() {
-    window.location.href = "CM2/CM2-matiere.html";
+    window.location.href = "CM2/CM2_matieres.html";
 }
 
 function redirectToConnexionPage() {

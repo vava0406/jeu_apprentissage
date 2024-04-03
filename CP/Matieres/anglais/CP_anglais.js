@@ -15,5 +15,5 @@ function redirectToCouleurPage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CP_matiere.html";
+    window.location.href = "../../CP_matieres.html";
 }

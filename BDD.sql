@@ -39,6 +39,14 @@ CREATE TABLE Score (
     FOREIGN KEY (Cm2ID) REFERENCES Cm2(ID)
 );
 
+CREATE TABLE reponses (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    page VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL
+);
+
+
 -- Table Utilisateurs
 CREATE TABLE Utilisateurs (
     ID INT AUTO_INCREMENT PRIMARY KEY,

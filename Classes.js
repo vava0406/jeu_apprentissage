@@ -2,7 +2,7 @@ function redirectToCPPage() {
     window.location.href = "CP/CP_matieres.html";
 }
 
-function redirectToCE1Page() {xbv
+function redirectToCE1Page() {
     window.location.href = "CE1/CE1_matieres.html";
 }
 

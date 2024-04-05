@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="php/Process.php?page=Calcul_7" method="post">
+            <input type="hidden" name="reponse_correcte" value="266">
             <div class="start-screen">
                 <h1 class="heading">Quizz Maths</h1>
                 <h2 class="heading2">Combien font :</h2>
@@ -18,8 +20,9 @@
                 <button type="button" class="btn_start">282</button>
                 <button type="button" class="btn_start">286</button>
                 <button type="button" class="btn_start">321</button>
-                <button type="button" class="btn_valider">Valider réponse</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

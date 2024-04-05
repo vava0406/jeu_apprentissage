@@ -15,5 +15,5 @@ function redirectToTerminaisonPage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CM2_matiere.html";
+    window.location.href = "../../CM2_matieres.html";
 }

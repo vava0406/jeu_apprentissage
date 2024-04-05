@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="php/Process.php?page=ConvertionT_4" method="post">
+            <input type="hidden" name="reponse_correcte" value="1 j 2 h">
             <div class="start-screen">
                 <h1 class="heading">Quizz Maths</h1>
                 <h2 class="heading2">Convertie ce temps :</h2>
@@ -18,8 +20,9 @@
                 <button type="button" class="btn_start">1 j 2 h</button>
                 <button type="button" class="btn_start">1 j 1 h</button>
                 <button type="button" class="btn_start">2 j</button>
-                <button type="button" class="btn_valider">Valider réponse</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

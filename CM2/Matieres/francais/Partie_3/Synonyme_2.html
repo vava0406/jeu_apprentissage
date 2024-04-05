@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="php/Process.php?page=Synonnyme_2" method="post">
+            <input type="hidden" name="reponse_correcte" value="Vif">
             <div class="start-screen">
                 <h1 class="heading">Quizz Français</h1>
                 <h2 class="heading2">Quel mot est synonyme de :</h2>
@@ -18,8 +20,9 @@
                 <button type="button" class="btn_start">Vif</button>
                 <button type="button" class="btn_start">Fugace</button>
                 <button type="button" class="btn_start">Dynamique</button>
-                <button type="button" class="btn_valider">Valider réponse</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

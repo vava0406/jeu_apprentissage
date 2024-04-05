@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="php/Process.php?page=Terminaison_5" method="post">
+            <input type="hidden" name="reponse_correcte" value="ons">
             <div class="start-screen">
                 <h1 class="heading">Quizz Français</h1>
                 <h2 class="heading2">Complète avec la bonne conjugaison :</h2>
@@ -18,8 +20,9 @@
                 <button type="button" class="btn_start">ons</button>
                 <button type="button" class="btn_start">ions</button>
                 <button type="button" class="btn_start">ez</button>
-                <button type="button" class="btn_valider">Valider réponse</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $servername = "localhost";
         $username = "root";
         $password = "password";
-        $dbname = "test_connaissance";
+        $dbname = "test_connaissance_2";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Préparer la requête SQL d'insertion en fonction de la page
-        $sql = "INSERT INTO reponses (reponse, page, reponse_correcte) VALUES ('$reponse', '$page', '$reponse_correcte')";
+        $sql = "INSERT INTO reponse_francais (reponse, page, reponse_correcte) VALUES ('$reponse', '$page', '$reponse_correcte')";
 
         if ($conn->query($sql) === TRUE) {
             // Succès de l'insertion, ne rien renvoyer

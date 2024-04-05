@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="php/Process.php?page=ConvertionM_1" method="post">
+            <input type="hidden" name="reponse_correcte" value="500 cm">
             <div class="start-screen">
                 <h1 class="heading">Quizz Maths</h1>
                 <h2 class="heading2">Convertie cette mesures :</h2>
@@ -18,8 +20,9 @@
                 <button type="button" class="btn_start">500 cm</button>
                 <button type="button" class="btn_start">5000 cm</button>
                 <button type="button" class="btn_start">50 km</button>
-                <button type="button" class="btn_valider">Valider réponse</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

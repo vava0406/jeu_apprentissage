@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Envoyez les données du formulaire via AJAX
         envoyerDonneesFormulaire('../php/Process.php', formData);
       } else {
-        window.location.href = 'end.html';
+        window.location.href = 'End.html';
       }
     });
   

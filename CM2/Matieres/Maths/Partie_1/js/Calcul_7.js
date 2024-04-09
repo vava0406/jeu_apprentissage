@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var formData = new FormData(document.getElementById('quizForm'));
   
         // Envoyez les données du formulaire via AJAX
-        envoyerDonneesFormulaire('php/Process.php?page=Calcul_7', formData);
+        envoyerDonneesFormulaire('../php/Process.php', formData);
       } else {
         window.location.href = 'Calcul_8.html';
       }

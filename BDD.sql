@@ -1,72 +1,124 @@
-USE test;
-
-CREATE TABLE CP(
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-    Score INT
-);
-
-CREATE TABLE Ce1(
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-    Score INT
-);
-
-CREATE TABLE Ce2(
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-    Score INT
-);
-
-CREATE TABLE Cm1(
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-    Score INT
-);
-
-CREATE TABLE Cm2(
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-    Score INT
-);
-
-CREATE TABLE Score (
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-	CpID INT,
-    Ce1ID INT,
-    Ce2ID INT,
-    Cm1ID INT,
-    Cm2ID INT,
-	FOREIGN KEY (CpID) REFERENCES CP(ID),
-    FOREIGN KEY (Ce1ID) REFERENCES Ce1(ID),
-    FOREIGN KEY (Ce2ID) REFERENCES Ce2(ID),
-    FOREIGN KEY (Cm1ID) REFERENCES Cm1(ID),
-    FOREIGN KEY (Cm2ID) REFERENCES Cm2(ID)
-);
-
-CREATE TABLE reponses (
+CREATE TABLE Niveaux (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    reponse VARCHAR(255) NOT NULL,
-    page VARCHAR(255) NOT NULL,
-    reponse_correcte VARCHAR(255) NOT NULL
+    Nom VARCHAR(10) NOT NULL
 );
 
-
--- Table Utilisateurs
 CREATE TABLE Utilisateurs (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Email VARCHAR(255) UNIQUE NOT NULL,
     MotDePasse VARCHAR(255) NOT NULL,
     Prenom VARCHAR(50),
-    Nom VARCHAR(50),
-    Score INT,
-    FOREIGN KEY (Score) REFERENCES Score(ID)
+    Nom VARCHAR(50)
 );
 
--- Table QuizzTermines
-CREATE TABLE QuizzTermines (
+CREATE TABLE Reponses_CM2_francais (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    UserID INT,
-    FOREIGN KEY (UserID) REFERENCES Utilisateurs(ID),
-    DateTerminaison DATETIME,
-    Resultat INT, -- Exemple d'un champ pour le résultat du quiz (peut être adapté selon les besoins)
-    Score INT
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE Reponses_CM2_maths (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
 
-select * from Utilisateurs ; 
+CREATE TABLE Reponses_CM2_anglais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CM1_francais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CM1_maths (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CM1_anglais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE2_francais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE2_maths (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE2_anglais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE1_francais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE1_maths (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE1_anglais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CE1_CG (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CP_francais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CP_maths (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Reponses_CP_anglais (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    reponse VARCHAR(255) NOT NULL,
+    reponse_correcte VARCHAR(255) NOT NULL,
+    nom_question VARCHAR(255) NOT NULL
+);

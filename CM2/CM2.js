@@ -11,5 +11,5 @@ function redirectToAnglaisPage() {
 }
 
 function redirectToRedirectPage() {
-    window.location.href = "../../index.html.php";
+    window.location.href = "../index.html.php";
 }

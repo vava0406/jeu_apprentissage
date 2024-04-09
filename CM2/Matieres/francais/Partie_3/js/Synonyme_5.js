@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var formData = new FormData(document.getElementById('quizForm'));
   
         // Envoyez les données du formulaire via AJAX
-        envoyerDonneesFormulaire('php/Process.php?page=Synonyme_5', formData);
+        envoyerDonneesFormulaire('../php/Process.php', formData);
       } else {
-        window.location.href = 'end.html';
+        window.location.href = 'End.html';
       }
     });
   

@@ -1,5 +1,5 @@
 function redirectTosyllabesPage() {
-    window.location.href = "Partie_1/Syllabes1.html";
+    window.location.href = "Partie_1/Syllabes_1.html";
 }
 
 function redirectToOAPage() {
@@ -19,5 +19,5 @@ function redirectTonegationPage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CE1_matiere.html";
+    window.location.href = "../../CE1_matieres.html";
 }

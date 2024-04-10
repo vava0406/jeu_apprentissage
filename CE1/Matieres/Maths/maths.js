@@ -23,5 +23,5 @@ function redirectToCalculPage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CE1_matiere.html";
+    window.location.href = "../../CE1_matieres.html";
 }

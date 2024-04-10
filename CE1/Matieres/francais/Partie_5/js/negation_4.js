@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['Ma soeur nn\'adore pas lire.'];
+    var syllabesCorrectes = ['Ma soeur n adore pas lire.'];
     var reponseValidee = false;
     var reponseEnvoyee = false;
   

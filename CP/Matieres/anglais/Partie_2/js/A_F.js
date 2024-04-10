@@ -1,6 +1,6 @@
 JS : 
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['Quel est ton  nom ?'];
+    var syllabesCorrectes = ['Quel est ton nom ?'];
     var reponseValidee = false;
     var reponseEnvoyee = false;
   

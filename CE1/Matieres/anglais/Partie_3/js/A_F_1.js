@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['Jn\'aime jouer dans le parc.'];
+    var syllabesCorrectes = ['J aime jouer dans le parc.'];
     var reponseValidee = false;
     var reponseEnvoyee = false;
   
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Envoyez les données du formulaire via AJAX
         envoyerDonneesFormulaire('../php/Process.php', formData);
       } else {
-        window.location.href = 'A_F_1.html';
+        window.location.href = 'A_F_2.html';
       }
     });
   

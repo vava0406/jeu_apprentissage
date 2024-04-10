@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="3,2 dm">
+            <input type="hidden" name="nom_question" value="Convertir_3">
             <div class="start-screen">
                 <h1 class="heading">Quizz Convertion</h1>
                 <h2 class="heading2">Convertit cette longueur :</h2>
@@ -20,6 +23,7 @@
                 <button type="button" class="btn_start">3,2 dm</button>
                 <button type="button" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

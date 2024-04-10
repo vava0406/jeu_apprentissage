@@ -61,7 +61,7 @@ body {
 }
 
 .btn_redirect {
-    width: 100%;
+    width: 50%;
     height: 60px;
     background: rgba(0, 35, 35, 0.23);
     border: none;
@@ -72,6 +72,7 @@ body {
     cursor: pointer;
     transition: 0.3s linear;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 3%;
 }

@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="1 000 x 2 + 700 + 30 + 30 + 5">
+            <input type="hidden" name="nom_question" value="Decomposition_4">
             <div class="start-screen">
                 <h1 class="heading">Quizz Décomposition</h1>
                 <h2 class="heading2">Décompose ce nombre.</h2>
@@ -20,6 +23,7 @@
                 <button type="button" class="btn_start">1 000 x 2 + 700 + 30 + 30 + 5</button>
                 <button type="button" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

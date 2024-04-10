@@ -13,3 +13,7 @@ function redirectToAnglaisPage() {
 function redirectToCGPage() {
     window.location.href = "Matieres/CG/CE1_CG.html";
 }
+
+function redirectToRedirectPage() {
+    window.location.href = "../index.html.php";
+}

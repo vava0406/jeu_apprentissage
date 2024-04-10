@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="Nous avons un chat à la maison.">
+            <input type="hidden" name="nom_question" value="A_F_4">
             <div class="start-screen">
                 <h1 class="heading">Quizz Anglais</h1>
                 <h2 class="heading2">Que veut dire :</h2>
@@ -20,6 +23,7 @@
                 <button type="button" class="btn_start">On a un petit chat.</button>
                 <button type="button" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

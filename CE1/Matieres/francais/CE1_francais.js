@@ -1,5 +1,5 @@
 function redirectTosyllabesPage() {
-    window.location.href = "Partie_1/syllabes1.html";
+    window.location.href = "Partie_1/Syllabes1.html";
 }
 
 function redirectToOAPage() {
@@ -11,11 +11,11 @@ function redirectToconjugaisonPage() {
 }
 
 function redirectToinfinitifPage() {
-    window.location.href = "Partie_4/infinitif_1.html";
+    window.location.href = "Partie_4/Infinitif_1.html";
 }
 
 function redirectTonegationPage() {
-    window.location.href = "Partie_5/negation_1.html";
+    window.location.href = "Partie_5/Negation_1.html";
 }
 
 function redirectToIndexPage() {

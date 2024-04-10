@@ -10,9 +10,12 @@
 </head>
 <body>
     <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="Bleu">
+            <input type="hidden" name="nom_question" value="Couleur_3">
             <div class="start-screen">
                 <h1 class="heading">Quizz Anglais</h1>
-                <h2 class="heading2">Quel est cette Couleur</h2>
+                <h2 class="heading2">Quel est cette Couleur :</h2>
                 <h2 class="heading2">Blue</h2>
                 <button type="button" class="btn_start_1">Violette</button>
                 <button type="button" class="btn_start_2">Jaune</button>
@@ -20,6 +23,7 @@
                 <button type="button" class="btn_start_4">Rouge</button>
                 <button type="button" class="btn_valider">Valider réponse</button>
             </div>
+        </form>
     </div>
 </body>
 </html>

@@ -11,5 +11,5 @@ function redirectToCompletePhrasePage() {
 }
 
 function redirectToIndexPage() {
-    window.location.href = "../../CM1_matiere.html";
+    window.location.href = "../../CM1_matieres.html";
 }

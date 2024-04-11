@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['1 000 x 2 + 700 + 30 + 30 + 5 '];
+    var syllabesCorrectes = ['1 000 x 2 + 700 + 30 + 30 + 5'];
     var reponseValidee = false;
     var reponseEnvoyee = false;
   

@@ -1,6 +1,6 @@
 JS : 
 document.addEventListener('DOMContentLoaded', function () {
-    var syllabesCorrectes = ['0,57 dm'];
+    var syllabesCorrectes = ['0,57 m'];
     var reponseValidee = false;
     var reponseEnvoyee = false;
   

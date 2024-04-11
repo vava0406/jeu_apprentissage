@@ -20,28 +20,28 @@ if (!isset($_SESSION['utilisateur'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Accueil.css" />
     <title>RoboLearnLabs</title>
-    <script src="Classes.js"></script>
+    <script src="Accueil.js"></script>
 </head>
-
 <body>
     <div class="container">
-            <div class="start-screen">
-                <h1 class="heading">Quizz Primaire</h1>
-                <h2 class="heading2">Choissisez votre classe</h2>
-                <button type="button" class="btn_start" onclick="redirectToCPPage()">CP</button>
-                <button type="button" class="btn_start" onclick="redirectToCE1Page()">CE1</button>
-                <button type="button" class="btn_start" onclick="redirectToCE2Page()">CE2</button>
-                <button type="button" class="btn_start" onclick="redirectToCM1Page()">CM1</button>
-                <button type="button" class="btn_start" onclick="redirectToCM2Page()">CM2</button>
-                <?php if (!$utilisateur): ?>
-                    <button type="button" class="btn_connect" onclick="redirectToConnexionPage()">Connexion</button>
-                <?php else: ?>   
-                    <button type="button" class="btn_connect" onclick="redirectToCompte()">Compte</button>
-                <?php endif ?>
-            </div>
+        <header class="header">
+        <h2 class="heading2">RoboLearnLabs</h2>
+        <?php if (!$utilisateur): ?>
+            <button type="button" class="btn_connect" onclick="redirectToConnexionPage()">Connexion</button>
+        <?php else: ?>   
+            <button type="button" class="btn_connect" onclick="redirectToCompte()">Compte</button>
+        <?php endif ?>
+        </header>
+            <a href="Selection_classes/Selection_classes.html">
+                <img src="Image/QUIZZ.png" class="quizz">
+            </a>
+            <button type="button" class="btn_quizz" onclick="redirectToQuizzPage()">Participez à vos Quizz !</button>
+            <a href="Resultats.html">
+                <img src="Image/Resultats.png" class="resultats">
+        </a>
+        <button type="button" class="btn_resultats" onclick="redirectToResultatsPage()">Vos Résultats</button>
     </div>
 </body>
-
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearnLabs</title>
+    <link rel="icon" href="../../../../../../Image/Mascotte.png">
+    <link rel="stylesheet" href="css/AE.css">
+    <script src="js/AE_4.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="20€ + 20€ + 10€">
+            <input type="hidden" name="nom_question" value="AE_4">
+            <div class="start-screen">
+                <h1 class="heading">Quizz Maths</h1>
+                <h2 class="heading2">Combien as-tu besoin de pièce pour :</h2>
+                <h2 class="heading2">50€</h2>
+                <button type="button" class="btn_start">20€ + 10€ + 5€</button>
+                <button type="button" class="btn_start">20€ + 10€</button>
+                <button type="button" class="btn_start">20€ + 20€ + 10€</button>
+                <button type="button" class="btn_start">20€ + 20€ + 20€</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

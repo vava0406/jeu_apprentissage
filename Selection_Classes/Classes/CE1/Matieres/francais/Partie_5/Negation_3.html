@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearnLabs</title>
+    <link rel="icon" href="../../../../../../Image/Mascotte.png">
+    <link rel="stylesheet" href="css/Negation.css">
+    <script src="js/Negation_3.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="Les oiseux ne chantent pas dans le jardin.">
+            <input type="hidden" name="nom_question" value="Negation_3">
+            <div class="start-screen">
+                <h1 class="heading">Quizz Français</h1>
+                <h2 class="heading2">Quelle est la négation de cette phrase ? </h2>
+                <h2 class="heading2">Les oiseaux chantent dans le jardin</h2>
+                <button type="button" class="btn_start">Nous ne voyons pas souvent d'oiseaux migrateurs ici.</button>
+                <button type="button" class="btn_start">Les oiseaux ne chantent pas dans le jardin.</button>
+                <button type="button" class="btn_start">Il n'y a pas d'oiseaux colorés dans cette forêt.</button>
+                <button type="button" class="btn_start">Les oiseaux ne volent jamais la nuit.</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
+            </div>
+            </form>
+    </div>
+</body>
+</html>

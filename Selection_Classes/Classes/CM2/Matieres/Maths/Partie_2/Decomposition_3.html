@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearnLabs</title>
+    <link rel="icon" href="../../../../../../Image/Mascotte.png">
+    <link rel="stylesheet" href="css/Decomposition.css">
+    <script src="js/Decomposition_3.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="(4 x 1 000) + (8 x 100) + (9 x 10) + (7 x 1)">
+            <input type="hidden" name="nom_question" value="Decomposition_3">
+            <div class="start-screen">
+                <h1 class="heading">Quizz Maths</h1>
+                <h2 class="heading2">Décompose ce nombre :</h2>
+                <h2 class="heading2">4 897</h2>
+                <button type="button" class="btn_start">(8 x 100) + (9 x 10) + (7 x 1)</button>
+                <button type="button" class="btn_start">(8 x 1 000) + (6 x 100) + (4 x 10)</button>
+                <button type="button" class="btn_start">(4 x 1 000) + (8 x 100) + (9 x 10) + (7 x 1)</button>
+                <button type="button" class="btn_start">(5 x 1 000) + (7 x 100) + (8 x 10) + (5 x 1)</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

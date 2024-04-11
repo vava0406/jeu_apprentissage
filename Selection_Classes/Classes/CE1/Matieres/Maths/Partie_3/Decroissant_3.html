@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearnLabs</title>
+    <link rel="icon" href="../../../../../../Image/Mascotte.png">
+    <link rel="stylesheet" href="css/Decroissant.css">
+    <script src="js/Decroissant_3.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="100 - 80 - 60 - 40">
+            <input type="hidden" name="nom_question" value="Decroissant_3">
+            <div class="start-screen">
+                <h1 class="heading">Quizz Maths</h1>
+                <h2 class="heading2">Quelle suite est décroissante?</h2>
+                <button type="button" class="btn_start">64 - 17 - 95 - 39</button>
+                <button type="button" class="btn_start">97 - 32 - 21 - 74</button>
+                <button type="button" class="btn_start">78 - 26 - 68 - 54</button>
+                <button type="button" class="btn_start">100 - 80 - 60 - 40</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

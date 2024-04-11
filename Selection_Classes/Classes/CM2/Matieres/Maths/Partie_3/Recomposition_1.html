@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearnLabs</title>
+    <link rel="icon" href="../../../../../../Image/Mascotte.png">
+    <link rel="stylesheet" href="css/Recomposition.css">
+    <script src="js/Recomposition_1.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form id="quizForm" action="../php/Process.php" method="post">
+            <input type="hidden" name="reponse_correcte" value="123 456">
+            <input type="hidden" name="nom_question" value="Recomposition_1">
+            <div class="start-screen">
+                <h1 class="heading">Quizz Maths</h1>
+                <h2 class="heading2">Recompose ce nombre :</h2>
+                <h2 class="heading2">(1 x 100 000) + (2 x 10 000) + (3 x 1 000) + (4 x 100) + (5 x 10) + (6 x 1)</h2>
+                <button type="button" class="btn_start">102 406</button>
+                <button type="button" class="btn_start">234 567</button>
+                <button type="button" class="btn_start">223 456</button>
+                <button type="button" class="btn_start">123 456</button>
+                <button type="submit" class="btn_valider">Valider réponse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Préparation de la requête SQL d'insertion
-        $sql = "INSERT INTO Reponses_CM1_maths (reponse, reponse_correcte, nom_question) VALUES ('$reponse', '$reponse_correcte', '$nom_question')";
+        $sql = "INSERT INTO Reponses_CP_maths (reponse, reponse_correcte, nom_question) VALUES ('$reponse', '$reponse_correcte', '$nom_question')";
 
         // Exécution de la requête
         if ($conn->query($sql) === TRUE) {
